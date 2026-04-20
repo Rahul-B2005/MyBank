@@ -1,0 +1,189 @@
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 80%;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+/* ===== FORM ===== */
+form {
+  margin-left: 95px;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+/* INPUTS */
+input,
+select {
+  width: 100%;
+  padding: 11px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #003366;
+}
+
+/* ERROR */
+.error {
+  color: red;
+  font-size: 13px;
+  margin: 3px 0 8px;
+}
+
+/* BUTTONS */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  background: #003366;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0055aa;
+}
+
+/* ===== RECEIPT ===== */
+.bank-receipt,
+.receipt {
+  background: white;
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.bank-receipt h2,
+.receipt h2 {
+  color: #003366;
+  margin-bottom: 5px;
+}
+
+.bank-receipt p,
+.receipt p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.pdf-btn {
+  background: green;
+}
+
+.pdf-btn:hover {
+  background: darkgreen;
+}
+
+/* ===== PASSBOOK / HISTORY ===== */
+.history,
+.passbook {
+  
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.history h2,
+.passbook h2 {
+  text-align: center;
+  color: #003366;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th {
+  background: #003366;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+tr:hover {
+  background: #e6f0ff;
+}
+
+/* ===== POPUP ===== */
+.popup-overlay,
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  width: 320px;
+  animation: popupShow 0.3s ease;
+}
+
+.popup-box h2 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+/* POPUP ANIMATION */
+@keyframes popupShow {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  background: #003366;
+  color: white;
+}

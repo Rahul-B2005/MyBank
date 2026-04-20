@@ -1,0 +1,215 @@
+/* =================== GLOBAL =================== */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+   background-color: #f7f9fc;   /* soft white-blue */
+  color: #1f2d3d;
+  min-height: 100vh;
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* =================== NAVBAR =================== */
+
+nav {
+  background: #003366;   /* deep banking blue */
+  color: #ffffff;
+  height: 70px;
+
+  /* PERFECT ALIGNMENT */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 30px;
+}
+header {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+/* ================= MENU ================= */
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+/* remove default li spacing issues */
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+/* NAV LINKS */
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding: 8px 5px;
+  border-radius: 6px;
+  white-space: nowrap;
+  transition: 0.25s;
+}
+
+a:hover {
+  background: rgba(255, 255, 255, 0.342);
+}
+/* =================== BANK CARDS =================== */
+
+section,
+.d1 {
+  width: 92%;
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 14px;
+  box-shadow:
+      0 10px 25px rgba(0,0,0,0.06),
+      0 2px 6px rgba(0,0,0,0.04);
+  text-align: center;
+  transition: 0.3s;
+}
+
+section:hover {
+  transform: translateY(-4px);
+}
+
+/* Headings */
+section h2 {
+  color: #002147;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+section p {
+  font-size: 1.05rem;
+  color: #5a6a7a;
+}
+
+/* Images */
+section img {
+  width: 45%;
+  max-width: 280px;
+  margin-top: 18px;
+  border-radius: 12px;
+}
+
+
+
+/* =================== BUTTONS =================== */
+
+button {
+  background: linear-gradient(90deg,#004080,#0073e6);
+  color: white;
+  border: none;
+  padding: 11px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  letter-spacing: 0.3px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(46, 117, 189, 0.815);
+}
+
+/* =================== USER SECTION =================== */
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  height: 100%;                 /* IMPORTANT */
+  padding-left: 20px;           /* space after divider */
+
+  border-left: 1.5px solid rgba(248, 246, 246, 0.849);
+}
+
+.username {
+  color: white;
+  font-weight: 400;
+  margin-top:1px;
+  display: flex;
+  align-items: center;
+}
+
+.username i {
+  margin-right: 6px;
+}
+
+/* LOGOUT */
+.dd5 {
+  background: linear-gradient(90deg,#d90429,#ef233c);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top:0.0%;
+}
+
+.dd5:hover {
+  background: linear-gradient(90deg,#b00020,#d0002a);
+}
+
+/* =================== POPUP BUTTONS =================== */
+
+.ok-btn {
+  background: linear-gradient(90deg,#28a745,#2ecc71);
+}
+
+.cancel-btn {
+  background: linear-gradient(90deg,#6c757d,#868e96);
+}
+
+/* =================== SLIDER =================== */
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider img {
+  max-width: 90%;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+/* =================== FOOTER =================== */
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 18px;
+  background: #001f3f;
+  color: #cfd8e3;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+.h5{
+  text-align:center;
+}

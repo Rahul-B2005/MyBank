@@ -1,0 +1,216 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling (assuming global styles are already set) */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height for center alignment */
+  background-color: #f7f9fc;
+  padding: 20px;
+}
+
+/* Flip card container */
+.flip-card {
+  margin-bottom: 70px;
+  width: 390px;
+  height: 500px;
+  perspective: 1000px;
+  position: relative;
+}
+
+/* Inner container for flip effect */
+.flip-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.flip-card.active .flip-inner {
+  transform: rotateY(180deg);
+}
+
+/* Front (Login) side */
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e3e8ee;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+.dd8{
+ margin-left: 3px;
+}
+
+/* Heading styles */
+h2 {
+  color: #002147;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Form styles */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccd6e0;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+/* CAPTCHA container for spacing */
+.recaptcha {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0055aa;
+}
+
+/* Paragraph and span for flip link */
+p {
+  margin-top: 15px;
+  font-size: 13px;
+  text-align: center;
+}
+
+span {
+  color: #0056b3;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Popup overlay styling */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* above other content */
+}
+
+/* Popup box styling */
+.popup-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Success and error border styles */
+.popup-box.success {
+  border-left: 5px solid green;
+}
+
+.popup-box.error {
+  border-left: 5px solid red;
+}
+
+/* Footer styling */
+footer {
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
+  padding: 18px;
+  background: #001f3f;
+  color: #cfd8e3;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.loan-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f7f9fc;
+  font-family: "Segoe UI", Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Main card styling */
+.loan-card {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+input{
+  text-align: center;
+}
+
+/* Footer styling */
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 18px;
+  background: #001f3f;
+  color: #cfd8e3;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
